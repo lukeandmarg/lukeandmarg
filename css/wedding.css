@@ -143,7 +143,7 @@ ul li {
 
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1023px) and (orientation: portrait)){
 	#mainPhoto {
 		width: 50%;
 	}
@@ -169,6 +169,17 @@ ul li {
 	}
 	.no-bottom-margin {
 		margin-bottom: 0;
+	}
+}
+@media only screen and (max-width: 1023px) and (orientation: landscape) {
+	.big-row {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+	.big-row > * {
+		flex: 1 100%;
 	}
 }
 
