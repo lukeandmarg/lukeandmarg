@@ -127,8 +127,10 @@ ul li {
     width: 70%;
     height: 50vh;
 	background-color: #C4D7F2;
-	left: 20%;
   }
+.smaller {
+	font-size: 0.6em;
+}
 
   @media only screen and (max-width: 750px) {
 	#mainTitle {
@@ -143,7 +145,7 @@ ul li {
 
 }
 
-@media only screen and (max-width: 1023px) and (orientation: portrait)){
+@media only screen and (max-width: 1023px) and (orientation: portrait){
 	#mainPhoto {
 		width: 50%;
 	}
@@ -152,8 +154,8 @@ ul li {
 	}	
 	#map {
 		height: 45vh;
-		left: 15vw;
-	} */
+		margin-left: 15%;
+	} 
 	.small-col {
         display: flex;
         flex-direction: column;
@@ -192,5 +194,8 @@ ul li {
 	}
 	.big-row > * {
 		flex: 1 100%;
+	}
+	#map {
+		margin-left: 10vw;
 	}
 }
